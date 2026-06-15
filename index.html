@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Live Cams</title>
+  <title>LHHT 26</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -18,6 +18,16 @@
     max-width: 700px;
     margin: auto;
   }
+
+.info-card {
+  background: white;
+  color: #000;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  max-width: 500px;
+}
   
   h1 {
     margin-bottom: 1.5rem;
@@ -56,37 +66,105 @@
 <body>
 
 <div class="container">
-  <h1>OBX 2026 Vaca</h1>
+  <h1>LHHT 2026</h1>
 
-  <h2>Beach House Details</h2>
-  <a href="https://www.surforsound.com/hatteras-vacation-rental/property/1005" target="_blank">Time & Tide</a>
-  <a href="https://email.trackhs.com/CL0/https:%2F%2Fsurforsound.trackhs.com%2Fguest%2F/1/0100019dde63b1b4-54db826b-db67-47d1-86ac-fa80f74c99bb-000000/iavHPqKwLcMJKP2OTlYh8MV3ThC5Q0kfvC5fdxL6JNI=452" target="_blank">Guest Portal</a>
-  <a href="https://maps.app.goo.gl/xvVY98m1x6tBp61VA" target="_blank">Google Maps</a>
+<h2>Current Conditions</h2>
 
-  <h2>Wayne County Cams</h2>
-  <a href="https://itscameras.dot.state.oh.us/images/D03/US-30_SR-57.jpg" target="_blank">Orrville</a>
-  <a href="https://itscameras.dot.state.oh.us/images/D03/US-30_SR-94.jpg" target="_blank">Dalton</a>
+<div class="info-card">
+  <div id="conditions">
+    Loading weather...
+  </div>
+</div>
 
-  <h2>Traffic Cams</h2>
-  <a href="https://ohgo.com/all-ohio" target="_blank">Ohio Camera Listings</a>
-  <a href="https://vtc3.roadsummary.com/rtplive/CAM078/stream.m3u8" target="_blank">I-77 @ Parkersburg</a>
-  <a href="https://www.wv511.org/CameraListing.aspx" target="_blank">WV Camera Listings</a>
-  <a href="https://511.vdot.virginia.gov/" target="_blank">Virginia Camera Listings</a>
-  <a href="https://drivenc.gov/" target="_blank">NC Camera Listings</a>
+  <h2>Important Links</h2>
+  <a href="https://caltopo.com/m/7GD7L69" target="_blank">CalTopo</a>
+  <a href="https://maps.app.goo.gl/X4mLbVcWtoVYXE1s9" target="_blank">Rendezvous (9:30am)</a>
+  <a href="https://www.google.com/maps/d/edit?mid=1q1ku0bJjtJ-nhdc3oqSPwUTuYxj8wh8&usp=sharing" target="_blank">Google My Maps</a>
+  <a href="https://www.traillifeconnect.com/getdoc/docmck21al5a" target="_blank">Quick Reference</a>
   
-  <h2>Dare County Cams</h2>
-  <a href="https://streams.surfchex.com:8443/live/hatteras1.stream/playlist.m3u8" target="_blank">Hatteras – Durant</a>
-  <a href="https://eapps.ncdot.gov/services/traffic-prod/v1/cameras/images?filename=Hatteras_Inlet_North_Dock.jpg" target="_blank">Hatteras Ferry</a>
-  <a href="https://stream-ue1-delta.dropcam.com/nexus_aac/1f488a2b0f024a969b4eb67a71ff292c/playlist.m3u8?public=EnTDazh3Uj" target="_blank">Rodanthe Pier</a>
-  <a href="https://5a5f765a4fcc2.streamlock.net:1936/live/ocracoke.stream/playlist.m3u8" target="_blank">Ocracoke (RTW)</a>
-  <a href="https://stream-uc2-charlie.dropcam.com/nexus_aac/7213f4489a664c8983d47b18817f699a/playlist.m3u8?public=FN8NRGQLya" target="_blank">Ocracoke (Silver Harbor)</a>
-  <a href="https://stream-uc2-bravo.dropcam.com/nexus_aac/27eb74c4764c49639e7e046440b2636c/playlist.m3u8?public=qhMRtltdvK" target="_blank">Ocracoke (Teach's Hole)</a>
-  <a href="https://stage-ams-nfs.srv.axds.co/stream/adaptive/noaa/currituck_sailfish/media_0.m3u8" target="_blank">Corolla – Sailfish St</a>
-
+  <h2>Live Cams</h2>
+  <a href="https://www.511pa.com/map/Cctv/4758" target="_blank">PA 31 @ Laurel Ridge</a>
+  <a href="https://live8.brownrice.com:444/sevensprings/sevensprings.stream/main_playlist.m3u8" target="_blank">7 Springs (Stowe/Wagner)</a>
+  <a href="https://streamer5.brownrice.com/sevenspringsavalanche/sevenspringsavalanche.stream/main_playlist.m3u8" target="_blank">7 Springs (Avalanche)</a>
+  <a href="https://streamer7.brownrice.com/sevenspringstahoe/sevenspringstahoe.stream/main_playlist.m3u8" target="_blank">7 Springs (North Face Summit)</a>
+  <a href="https://streamer9.brownrice.com/sevenspringsnorthface/sevenspringsnorthface.stream/main_playlist.m3u8" target="_blank">7 Springs (North Face Base)</a>
+  <a href="https://streamer2.brownrice.com/sevenspringstubing/sevenspringstubing.stream/main_playlist.m3u8" target="_blank">7 Springs (Tubing Park)</a>
+  <a href="https://api.wetmet.net/widgets/stream/frame.php?uid=709f27810dd5d1aac40d8e859300b1f1" target="_blank">Somerset</a>
+  
   <div class="note">
     Simple link hub • No embeds • Fast to load
   </div>
 </div>
+
+<script>
+async function loadWeather() {
+
+  const url =
+    "https://api.open-meteo.com/v1/forecast" +
+    "?latitude=40.02" +
+    "&longitude=-79.30" +
+    "&temperature_unit=fahrenheit" +
+    "&wind_speed_unit=mph" +
+    "&precipitation_unit=inch" +
+    "&current=temperature_2m,apparent_temperature,wind_speed_10m" +
+    "&daily=temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_probability_max,precipitation_sum" +
+    "&timezone=America/New_York";
+
+  try {
+
+    const data = await fetch(url).then(r => r.json());
+
+    document.getElementById("conditions").innerHTML = `
+  <strong>Current:</strong>
+  ${Math.round(data.current.temperature_2m)}°F
+  <br>
+
+  <strong>Feels Like:</strong>
+  ${Math.round(data.current.apparent_temperature)}°F
+  <br>
+
+  <strong>Wind:</strong>
+  ${Math.round(data.current.wind_speed_10m)} mph
+  <br>
+
+  <strong>Today's High / Low:</strong>
+  ${Math.round(data.daily.temperature_2m_max[0])}° /
+  ${Math.round(data.daily.temperature_2m_min[0])}°
+  <br>
+
+  <strong>Expected Rain Today:</strong>
+  ${data.daily.precipitation_sum[0].toFixed(2)}"
+  <br>
+
+  <strong>Sunrise:</strong>
+  ${new Date(data.daily.sunrise[0]).toLocaleTimeString([], {
+    hour: 'numeric',
+    minute: '2-digit'
+  })}
+  
+  <strong>Sunset:</strong>
+  ${new Date(data.daily.sunset[0]).toLocaleTimeString([], {
+    hour: 'numeric',
+    minute: '2-digit'
+  })}
+  <br>
+
+  <strong>Tomorrow:</strong>
+  ${Math.round(data.daily.temperature_2m_max[1])}° /
+  ${Math.round(data.daily.temperature_2m_min[1])}°
+  • ${data.daily.precipitation_probability_max[1]}% rain
+  • ${data.daily.precipitation_sum[1].toFixed(2)}"
+
+`;
+
+  } catch (err) {
+    document.getElementById("conditions").textContent =
+      "Unable to load weather.";
+  }
+}
+
+loadWeather();
+</script>
 
 </body>
 </html>
